@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom';
 import { motion, useInView } from 'framer-motion';
 import { useRef } from 'react';
+import { FaHammer, FaIndustry, FaBuilding, FaMobileAlt } from 'react-icons/fa';
 import './Solutions.css';
 
 const Solutions = () => {
@@ -62,7 +63,7 @@ const Solutions = () => {
   const solutions = [
     {
       title: "Mining Safety Systems",
-      icon: "⛏️",
+      icon: <FaHammer />,
       description: "Digital systems designed to improve safety visibility, reporting, and response in mining operations.",
       features: [
         "Real-time incident reporting",
@@ -74,7 +75,7 @@ const Solutions = () => {
     },
     {
       title: "Industrial Workflow Digitization",
-      icon: "🏗️",
+      icon: <FaIndustry />,
       description: "Transitioning manual and fragmented workflows into structured, trackable digital systems.",
       features: [
         "Process digitization",
@@ -86,7 +87,7 @@ const Solutions = () => {
     },
     {
       title: "Government-Backed Systems",
-      icon: "🏛️",
+      icon: <FaBuilding />,
       description: "Systems aligned with regulatory and administrative workflows in public sector environments.",
       features: [
         "Structured data collection",
@@ -98,7 +99,7 @@ const Solutions = () => {
     },
     {
       title: "Field-Ready Applications",
-      icon: "📱",
+      icon: <FaMobileAlt />,
       description: "Applications built for on-ground usage in environments with constraints on connectivity and usability.",
       features: [
         "Mobile-first design",

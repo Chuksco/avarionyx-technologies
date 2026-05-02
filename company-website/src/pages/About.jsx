@@ -1,5 +1,6 @@
 import { useRef } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { FaSearch, FaPencilRuler, FaBolt, FaHandshake, FaShieldVirus } from 'react-icons/fa';
 import './About.css';
 
 const About = () => {
@@ -129,7 +130,7 @@ const About = () => {
               variants={fadeInRight}
             >
               <div className="image-placeholder">
-                <div className="placeholder-icon">🎯</div>
+                <div className="placeholder-icon"><FaShieldVirus style={{fontSize: '2.5rem'}} /></div>
                 <p>Mission-Critical Solutions</p>
               </div>
             </motion.div>
@@ -239,7 +240,7 @@ const About = () => {
             variants={staggerContainer}
           >
             <motion.div className="approach-step" variants={fadeInUp}>
-              <div className="step-icon">🔍</div>
+              <div className="step-icon"><FaSearch style={{fontSize: '1.8rem'}} /></div>
               <h3>Discovery</h3>
               <p>
                 We start by deeply understanding your operations, challenges,
@@ -251,7 +252,7 @@ const About = () => {
             <div className="approach-arrow">→</div>
 
             <motion.div className="approach-step" variants={fadeInUp}>
-              <div className="step-icon">📐</div>
+              <div className="step-icon"><FaPencilRuler style={{fontSize: '1.8rem'}} /></div>
               <h3>Design</h3>
               <p>
                 Working closely with your team, we design solutions that fit
@@ -263,7 +264,7 @@ const About = () => {
             <div className="approach-arrow">→</div>
 
             <motion.div className="approach-step" variants={fadeInUp}>
-              <div className="step-icon">⚡</div>
+              <div className="step-icon"><FaBolt style={{fontSize: '1.8rem'}} /></div>
               <h3>Delivery</h3>
               <p>
                 We build robust, well-tested solutions using modern engineering
@@ -275,7 +276,7 @@ const About = () => {
             <div className="approach-arrow">→</div>
 
             <motion.div className="approach-step" variants={fadeInUp}>
-              <div className="step-icon">🤝</div>
+              <div className="step-icon"><FaHandshake style={{fontSize: '1.8rem'}} /></div>
               <h3>Support</h3>
               <p>
                 Our relationship doesn't end at deployment. We provide ongoing

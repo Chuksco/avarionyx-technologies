@@ -2,11 +2,11 @@
   min-height: 100vh;
 }
 
-/* About Hero - Enhanced */
+/* Editorial About Hero */
 .about-hero {
   padding: 5rem 0 3rem;
   text-align: center;
-  background: radial-gradient(circle at 50% 0%, rgba(124, 58, 237, 0.2) 0%, transparent 50%);
+  background: radial-gradient(circle at 50% 0%, rgba(196, 184, 150, 0.08) 0%, transparent 50%);
   position: relative;
   overflow: hidden;
 }
@@ -19,9 +19,9 @@
   width: 200%;
   height: 200%;
   background: 
-    radial-gradient(circle at 30% 50%, rgba(100, 255, 218, 0.15) 0%, transparent 40%),
-    radial-gradient(circle at 70% 50%, rgba(124, 58, 237, 0.15) 0%, transparent 40%);
-  animation: rotate 25s linear infinite;
+    radial-gradient(circle at 30% 50%, rgba(168, 149, 111, 0.08) 0%, transparent 40%),
+    radial-gradient(circle at 70% 50%, rgba(196, 184, 150, 0.08) 0%, transparent 40%);
+  animation: gentle-drift 25s ease-in-out infinite;
   z-index: 0;
 }
 
@@ -30,11 +30,10 @@
   margin-bottom: 1.5rem;
   position: relative;
   z-index: 1;
-  background: linear-gradient(135deg, #ffffff 0%, #64ffda 50%, #a78bfa 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  text-shadow: 0 0 60px rgba(100, 255, 218, 0.3);
+  color: var(--deep-accent);
+  font-family: 'Instrument Serif', serif;
+  font-weight: 400;
+  text-shadow: none;
   padding: 5px;
 }
 
@@ -67,9 +66,11 @@
 .about-text h2 {
   font-size: 2.8rem;
   margin-bottom: 1.5rem;
-  color: var(--text-primary);
+  color: var(--deep-accent);
   position: relative;
   display: inline-block;
+  font-family: 'Instrument Serif', serif;
+  font-weight: 400;
 }
 
 .about-text h2::after {
@@ -78,9 +79,10 @@
   bottom: -10px;
   left: 0;
   width: 60%;
-  height: 3px;
-  background: var(--gradient-1);
+  height: 2px;
+  background: var(--primary-color);
   border-radius: 2px;
+  box-shadow: none;
 }
 
 .about-text p {
@@ -95,15 +97,15 @@
 }
 
 .image-placeholder {
-  background: rgba(18, 24, 56, 0.7);
-  backdrop-filter: blur(20px);
-  border: 2px solid rgba(100, 255, 218, 0.2);
+  background: var(--secondary-bg);
+  border: 2px solid var(--glass-border);
   border-radius: 24px;
   padding: 4rem 2rem;
   text-align: center;
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-soft);
 }
 
 .image-placeholder::before {
@@ -113,14 +115,14 @@
   left: -100%;
   width: 100%;
   height: 100%;
-  background: linear-gradient(90deg, transparent, rgba(100, 255, 218, 0.2), transparent);
+  background: linear-gradient(90deg, transparent, rgba(168, 149, 111, 0.1), transparent);
   transition: left 0.8s ease;
 }
 
 .image-placeholder:hover {
   border-color: var(--primary-color);
   transform: translateY(-10px) scale(1.02);
-  box-shadow: 0 20px 60px rgba(100, 255, 218, 0.3);
+  box-shadow: var(--shadow-medium);
 }
 
 .image-placeholder:hover::before {
@@ -131,20 +133,21 @@
   font-size: 6rem;
   margin-bottom: 1rem;
   animation: float 4s ease-in-out infinite;
-  filter: drop-shadow(0 0 20px rgba(100, 255, 218, 0.6));
+  filter: drop-shadow(0 2px 6px rgba(45, 37, 32, 0.1));
+  color: var(--primary-color);
 }
 
 .image-placeholder p {
   color: var(--text-primary);
   font-size: 1.3rem;
-  font-weight: 600;
+  font-weight: 400;
   margin: 0;
-  text-shadow: 0 0 20px rgba(100, 255, 218, 0.5);
+  text-shadow: none;
 }
 
-/* Values Section - Enhanced */
+/* Editorial Values Section */
 .values-section {
-  background: linear-gradient(180deg, transparent 0%, rgba(18, 24, 56, 0.5) 50%, transparent 100%);
+  background: linear-gradient(180deg, transparent 0%, rgba(196, 184, 150, 0.03) 50%, transparent 100%);
   padding: 6rem 0;
   position: relative;
   overflow: hidden;
@@ -158,10 +161,10 @@
   width: 100%;
   height: 100%;
   background: 
-    radial-gradient(circle at 15% 20%, rgba(124, 58, 237, 0.15) 0%, transparent 40%),
-    radial-gradient(circle at 85% 80%, rgba(100, 255, 218, 0.15) 0%, transparent 40%);
+    radial-gradient(circle at 15% 20%, rgba(168, 149, 111, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 85% 80%, rgba(196, 184, 150, 0.05) 0%, transparent 40%);
   z-index: 0;
-  animation: backgroundShift 20s ease-in-out infinite;
+  animation: gentle-drift 20s ease-in-out infinite;
 }
 
 .values-grid {
@@ -176,10 +179,12 @@
   position: relative;
   padding: 2.5rem;
   cursor: default;
-  background: rgba(18, 24, 56, 0.6);
-  backdrop-filter: blur(15px);
-  border: 1px solid rgba(100, 255, 218, 0.15);
+  background: var(--secondary-bg);
+  border: 1px solid var(--glass-border);
+  border-radius: 16px;
   overflow: hidden;
+  box-shadow: var(--shadow-soft);
+  transition: all 0.8s cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .value-card::before {
@@ -189,9 +194,9 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background: linear-gradient(135deg, rgba(100, 255, 218, 0.1) 0%, rgba(124, 58, 237, 0.1) 100%);
+  background: linear-gradient(135deg, rgba(196, 184, 150, 0.08) 0%, rgba(168, 149, 111, 0.08) 100%);
   opacity: 0;
-  transition: opacity 0.4s ease;
+  transition: opacity 0.8s ease;
   z-index: 0;
 }
 
@@ -200,31 +205,28 @@
 }
 
 .value-card:hover {
-  border-color: rgba(100, 255, 218, 0.4);
+  border-color: var(--primary-color);
   transform: translateY(-8px);
-  box-shadow: 
-    0 15px 40px rgba(0, 0, 0, 0.4),
-    0 0 30px rgba(100, 255, 218, 0.2);
+  box-shadow: var(--shadow-medium);
+  background: var(--accent-bg);
 }
 
 .value-number {
   font-size: 3.5rem;
-  font-weight: 700;
-  background: var(--gradient-1);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
-  opacity: 0.4;
+  font-weight: 400;
+  color: var(--primary-color);
+  opacity: 0.6;
   margin-bottom: 1rem;
   position: relative;
   z-index: 1;
-  transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  font-family: 'Instrument Serif', serif;
 }
 
 .value-card:hover .value-number {
   opacity: 1;
-  transform: scale(1.10) rotate(-2deg);
-  text-shadow: 0 0 30px rgba(100, 255, 218, 0.8);
+  transform: scale(1.05);
+  text-shadow: none;
 }
 
 .value-card h3 {
@@ -233,7 +235,9 @@
   color: var(--text-primary);
   position: relative;
   z-index: 1;
-  transition: color 0.3s ease;
+  transition: color 0.8s ease;
+  font-family: 'Instrument Serif', serif;
+  font-weight: 400;
 }
 
 .value-card:hover h3 {
@@ -249,7 +253,7 @@
   z-index: 1;
 }
 
-/* Approach Section - Enhanced */
+/* Editorial Approach Section */
 .approach-section {
   padding: 6rem 0;
 }
@@ -264,15 +268,15 @@
 
 .approach-step {
   flex: 1;
-  background: rgba(18, 24, 56, 0.7);
-  backdrop-filter: blur(20px);
-  border: 1px solid rgba(100, 255, 218, 0.15);
+  background: var(--secondary-bg);
+  border: 1px solid var(--glass-border);
   border-radius: 20px;
   padding: 3rem 2rem;
   text-align: center;
-  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   position: relative;
   overflow: hidden;
+  box-shadow: var(--shadow-soft);
 }
 
 .approach-step::before {
@@ -299,10 +303,8 @@
 .approach-step:hover {
   transform: translateY(-15px) scale(1.05);
   border-color: var(--primary-color);
-  box-shadow: 
-    var(--shadow-glow),
-    0 0 40px rgba(100, 255, 218, 0.3);
-  background: rgba(18, 24, 56, 0.9);
+  box-shadow: var(--shadow-medium);
+  background: var(--accent-bg);
 }
 
 .step-icon {
@@ -310,16 +312,17 @@
   margin-bottom: 1.5rem;
   display: inline-block;
   animation: float 3s ease-in-out infinite;
-  filter: drop-shadow(0 0 10px rgba(100, 255, 218, 0.4));
+  filter: drop-shadow(0 2px 6px rgba(45, 37, 32, 0.1));
   position: relative;
   z-index: 1;
+  color: var(--primary-color);
 }
 
 .approach-step:hover .step-icon {
   animation-play-state: paused;
-  transform: scale(1.3) rotate(360deg);
-  filter: drop-shadow(0 0 20px rgba(100, 255, 218, 0.8));
-  transition: all 0.6s ease;
+  transform: scale(1.15);
+  filter: drop-shadow(0 4px 12px rgba(168, 149, 111, 0.15));
+  transition: all 0.8s ease;
 }
 
 .approach-step h3 {
@@ -328,7 +331,9 @@
   color: var(--text-primary);
   position: relative;
   z-index: 1;
-  transition: color 0.3s ease;
+  transition: color 0.8s ease;
+  font-family: 'Instrument Serif', serif;
+  font-weight: 400;
 }
 
 .approach-step:hover h3 {
@@ -349,7 +354,7 @@
   color: var(--primary-color);
   font-weight: bold;
   animation: pulse 2s ease-in-out infinite;
-  text-shadow: 0 0 20px rgba(100, 255, 218, 0.6);
+  text-shadow: none;
 }
 
 @keyframes pulse {
@@ -363,10 +368,10 @@
   }
 }
 
-/* Commitment Section - Enhanced */
+/* Editorial Commitment Section */
 .commitment-section {
   padding: 6rem 0;
-  background: var(--accent-bg);
+  background: rgba(196, 184, 150, 0.03);
   position: relative;
   overflow: hidden;
 }
@@ -379,9 +384,9 @@
   width: 200%;
   height: 200%;
   background: 
-    radial-gradient(circle at 30% 50%, rgba(100, 255, 218, 0.1) 0%, transparent 40%),
-    radial-gradient(circle at 70% 50%, rgba(124, 58, 237, 0.1) 0%, transparent 40%);
-  animation: backgroundShift 20s ease-in-out infinite;
+    radial-gradient(circle at 30% 50%, rgba(168, 149, 111, 0.05) 0%, transparent 40%),
+    radial-gradient(circle at 70% 50%, rgba(196, 184, 150, 0.05) 0%, transparent 40%);
+  animation: gentle-drift 20s ease-in-out infinite;
 }
 
 @keyframes backgroundShift {
@@ -398,17 +403,13 @@
   margin: 0 auto;
   text-align: center;
   padding: 4rem;
-  background: rgba(18, 24, 56, 0.8);
-  backdrop-filter: blur(30px);
+  background: var(--secondary-bg);
   border-radius: 24px;
-  border: 2px solid rgba(100, 255, 218, 0.3);
+  border: 2px solid var(--glass-border);
   position: relative;
   z-index: 1;
   overflow: hidden;
-  box-shadow: 
-    0 20px 60px rgba(0, 0, 0, 0.4),
-    0 0 60px rgba(124, 58, 237, 0.3),
-    inset 0 1px 0 rgba(255, 255, 255, 0.1);
+  box-shadow: var(--shadow-medium);
 }
 
 .commitment-content::before {
@@ -421,7 +422,7 @@
   background: linear-gradient(
     90deg,
     transparent,
-    rgba(100, 255, 218, 0.15),
+    rgba(196, 184, 150, 0.1),
     transparent
   );
   transition: left 0.8s ease;
@@ -439,9 +440,9 @@
   right: -2px;
   bottom: -2px;
   background: linear-gradient(45deg, 
-    rgba(100, 255, 218, 0.3),
-    rgba(124, 58, 237, 0.3),
-    rgba(100, 255, 218, 0.3)
+    rgba(168, 149, 111, 0.15),
+    rgba(196, 184, 150, 0.15),
+    rgba(168, 149, 111, 0.15)
   );
   border-radius: 24px;
   z-index: -1;
@@ -467,12 +468,11 @@
 .commitment-content h2 {
   font-size: 2.8rem;
   margin-bottom: 2rem;
-  color: var(--text-primary);
-  background: linear-gradient(135deg, #ffffff 0%, #64ffda 100%);
-  -webkit-background-clip: text;
-  -webkit-text-fill-color: transparent;
-  background-clip: text;
+  color: var(--deep-accent);
+  font-family: 'Instrument Serif', serif;
+  font-weight: 400;
   position: relative;
+  z-index: 1;
 }
 
 .commitment-content p {

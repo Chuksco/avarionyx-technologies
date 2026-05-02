@@ -1,5 +1,7 @@
 import { useRef, useState } from 'react';
 import { motion, useInView } from 'framer-motion';
+import { FaCode, FaTools, FaPlane, FaBriefcase } from 'react-icons/fa';
+import { FaBullseye, FaHandshake, FaBook, FaBalanceScale } from 'react-icons/fa';
 import './Team.css';
 
 const leadershipImages = import.meta.glob('../leadership-img/*.{png,jpg,jpeg,webp,avif,svg}', {
@@ -29,7 +31,7 @@ const Team = () => {
       name: "Devyansh Dingolia",
       role: "Chief Executive Officer",
       description: [/* TODO: Add member description */],
-      icon: "👨‍💻",
+      icon: <FaBriefcase />,
       gradient: "linear-gradient(135deg, #667eea 0%, #764ba2 100%)",
       level: "c-suite",
       achievements: [/* TODO: Add achievements */]
@@ -38,7 +40,7 @@ const Team = () => {
       name: "Janardhan Verma",
       role: "Co-CEO, Chief Technology Officer, Director/Promoter",
       description: [/* TODO: Add member description */],
-      icon: "👨‍💻",
+      icon: <FaCode />,
       gradient: "linear-gradient(135deg, #f093fb 0%, #f5576c 100%)",
       level: "director",
       achievements: [/* TODO: Add achievements */]
@@ -47,7 +49,7 @@ const Team = () => {
       name: "Yash Kumar",
       role: "Chief Financial Officer",
       description: [/* TODO: Add member description */],
-      icon: "👩‍🔧",
+      icon: <FaBalanceScale />,
       gradient: "linear-gradient(135deg, #4facfe 0%, #00f2fe 100%)",
       level: "c-suite",
       achievements: [/* TODO: Add achievements */]
@@ -56,7 +58,7 @@ const Team = () => {
       name: "Bhardwaj Kartikay",
       role: "Chief Operating Officer",
       description: [/* TODO: Add member description */],
-      icon: "👨‍✈️",
+      icon: <FaPlane />,
       gradient: "linear-gradient(135deg, #fa709a 0%, #fee140 100%)",
       level: "c-suite",
       achievements: [/* TODO: Add achievements */]
@@ -65,7 +67,7 @@ const Team = () => {
       name: "Manish Mandia",
       role: "Chief Product Officer",
       description: [/* TODO: Add member description */],
-      icon: "👩‍🔬",
+      icon: <FaTools />,
       gradient: "linear-gradient(135deg, #30cfd0 0%, #330867 100%)",
       level: "c-suite",
       achievements: [/* TODO: Add achievements */]
@@ -74,7 +76,7 @@ const Team = () => {
       name: "Sakshi Yadav",
       role: "Chief Marketing Officer, Director/Promoter",
       description: [/* TODO: Add member description */],
-      icon: "👨‍💼",
+      icon: <FaBullseye />,
       gradient: "linear-gradient(135deg, #a8edea 0%, #fed6e3 100%)",
       level: "director",
       achievements: [/* TODO: Add achievements */]
@@ -114,22 +116,22 @@ const Team = () => {
 
   const cultureValues = [
     {
-      icon: "🎯",
+      icon: <FaBullseye />,
       title: "Excellence Driven",
       description: "We're passionate about craftsmanship in software engineering. Every team member is empowered to do their best work."
     },
     {
-      icon: "🤝",
+      icon: <FaHandshake />,
       title: "Collaborative",
       description: "We believe the best solutions emerge from diverse perspectives working together toward a common goal."
     },
     {
-      icon: "📚",
+      icon: <FaBook />,
       title: "Continuous Learning",
       description: "Technology evolves rapidly. We invest in our team's growth and stay at the forefront of industry best practices."
     },
     {
-      icon: "⚖️",
+      icon: <FaBalanceScale />,
       title: "Work-Life Balance",
       description: "We build sustainable, high-performing teams by respecting the importance of life outside work."
     }

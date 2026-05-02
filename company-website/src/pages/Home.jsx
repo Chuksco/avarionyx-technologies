@@ -1,6 +1,7 @@
 import { useState, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import { motion, useInView, useMotionValue, useSpring, useTransform } from 'framer-motion';
+import { FaBolt, FaBrain, FaShieldAlt, FaHardHat, FaTrophy, FaShieldVirus, FaCode } from 'react-icons/fa';
 import './Home.css';
 
 const Home = () => {
@@ -94,22 +95,22 @@ const Home = () => {
 
   const features = [
     {
-      icon: '⚡',
+      icon: <FaBolt />,
       title: 'Execution Under Pressure',
       desc: 'Proven ability to design, iterate, and deliver systems in high-stakes environments where requirements evolve continuously.'
     },
     {
-      icon: '🧠',
+      icon: <FaBrain />,
       title: 'Engineering-First Thinking',
       desc: 'Systems are built from first principles - prioritizing reliability, scalability, and real-world usability.'
     },
     {
-      icon: '🛡️',
+      icon: <FaShieldAlt />,
       title: 'Operational Reliability',
       desc: 'Focused on environments where system failure, downtime, or ambiguity is not acceptable.'
     },
     {
-      icon: '🏗️',
+      icon: <FaHardHat />,
       title: 'Full-Stack System Design',
       desc: 'Complete system development - from backend architecture to user-facing interfaces - designed for deployment at scale.'
     }
@@ -162,9 +163,9 @@ const Home = () => {
 
           <div className="hero-graphic">
             {[
-              { icon: '🏆', title: 'SIH Champion', delay: 0 },
-              { icon: '🏛️', title: 'Government-Backed', delay: 0.2 },
-              { icon: '💻', title: 'Full-Stack Dev', delay: 0.4 }
+              { icon: <FaTrophy />, title: 'SIH Champion', delay: 0 },
+              { icon: <FaShieldVirus />, title: 'Government-Backed', delay: 0.2 },
+              { icon: <FaCode />, title: 'Full-Stack Dev', delay: 0.4 }
             ].map((card, i) => (
               <motion.div
                 key={i}

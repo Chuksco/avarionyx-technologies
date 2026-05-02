@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { FaEnvelope, FaClock, FaHandshake, FaBullseye, FaBolt, FaLightbulb } from 'react-icons/fa';
 import './Contact.css';
 
 const Contact = () => {
@@ -69,7 +70,7 @@ const Contact = () => {
 
                 <div className="contact-details">
                   <div className="contact-detail">
-                    <div className="detail-icon">📧</div>
+                    <div className="detail-icon"><FaEnvelope /></div>
                     <div className="detail-content">
                       <h4>Email</h4>
                       <a href="mailto:info@hemmingwaytech.com">info@hemmingwaytech.com</a>
@@ -78,7 +79,7 @@ const Contact = () => {
                   </div>
 
                   <div className="contact-detail">
-                    <div className="detail-icon">🕐</div>
+                    <div className="detail-icon"><FaClock /></div>
                     <div className="detail-content">
                       <h4>Response Time</h4>
                       <p>Within 24 hours on business days</p>
@@ -86,7 +87,7 @@ const Contact = () => {
                   </div>
 
                   <div className="contact-detail">
-                    <div className="detail-icon">🤝</div>
+                    <div className="detail-icon"><FaHandshake /></div>
                     <div className="detail-content">
                       <h4>Consultation</h4>
                       <p>Free initial consultation to discuss your needs</p>
@@ -217,7 +218,7 @@ const Contact = () => {
 
           <div className="why-grid">
             <div className="why-card card scale-in delay-1">
-              <div className="why-icon">🎯</div>
+              <div className="why-icon"><FaBullseye /></div>
               <h3>Clear Communication</h3>
               <p>
                 No jargon, no confusion. We explain technical concepts in 
@@ -226,7 +227,7 @@ const Contact = () => {
             </div>
 
             <div className="why-card card scale-in delay-2">
-              <div className="why-icon">⚡</div>
+              <div className="why-icon"><FaBolt /></div>
               <h3>Fast Response</h3>
               <p>
                 We understand urgency in critical operations. You'll hear 
@@ -235,7 +236,7 @@ const Contact = () => {
             </div>
 
             <div className="why-card card scale-in delay-3">
-              <div className="why-icon">🤝</div>
+              <div className="why-icon"><FaHandshake /></div>
               <h3>Honest Assessment</h3>
               <p>
                 We'll tell you if we're the right fit for your project. 
@@ -244,7 +245,7 @@ const Contact = () => {
             </div>
 
             <div className="why-card card scale-in delay-4">
-              <div className="why-icon">💡</div>
+              <div className="why-icon"><FaLightbulb /></div>
               <h3>Expert Guidance</h3>
               <p>
                 Benefit from our experience across multiple industries and 
