@@ -4,6 +4,7 @@ import './index.css';
 import './styles/nav-hero.css';
 import './styles/sections.css';
 import './styles/pages.css';
+import './styles/responsive.css'; /* ← MUST come last to override component CSS */
 
 import Loader from './components/ui/Loader';
 import Navbar from './components/layout/Navbar';
