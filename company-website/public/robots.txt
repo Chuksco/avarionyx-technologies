@@ -1,0 +1,7 @@
+# Robots.txt for Hemmingway Technologies
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://hemmingways.in/sitemap.xml
