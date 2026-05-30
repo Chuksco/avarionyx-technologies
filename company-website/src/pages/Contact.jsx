@@ -1,6 +1,7 @@
 import { useState } from 'react';
 import { CheckCircle } from 'lucide-react';
 import { useScrollReveal } from '../hooks/useAnimations';
+import { Helmet } from 'react-helmet-async';
 
 export default function Contact() {
   useScrollReveal();

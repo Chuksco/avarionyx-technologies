@@ -4,6 +4,7 @@ import { Briefcase, Code, Palette, Cog } from 'lucide-react';
 import { useScrollReveal, useGSAPReveal } from '../hooks/useAnimations';
 import EncryptedText from '../components/ui/EncryptedText';
 import CometCard from '../components/ui/CometCard';
+import { Helmet } from 'react-helmet-async';
 
 const VALUES = [
   { num: '01', title: 'Craft Over Speed', desc: 'We take pride in the quality of every line of code, every pixel, every decision. Shortcuts are not in our vocabulary.' },

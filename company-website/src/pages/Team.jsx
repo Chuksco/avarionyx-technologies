@@ -1,6 +1,7 @@
 import { useRef } from 'react';
 import { Briefcase, Code, Palette, Cog, Monitor, Lock, Rocket, Brain, Handshake, Lightbulb } from 'lucide-react';
 import { useScrollReveal, useGSAPReveal } from '../hooks/useAnimations';
+import { Helmet } from 'react-helmet-async';
 
 const TEAM_MEMBERS = [
   {

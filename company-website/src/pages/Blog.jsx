@@ -1,6 +1,7 @@
 import { useRef, useState } from 'react';
 import { Bot, Zap, Lock, Palette, Database, Rocket } from 'lucide-react';
 import { useScrollReveal } from '../hooks/useAnimations';
+import { Helmet } from 'react-helmet-async';
 
 const BLOG_POSTS = [
   {
