@@ -183,7 +183,7 @@ export default function Navbar({ theme, toggleTheme }) {
             <Link to="/" className="nav-logo">
               <img src="/logo-icon.png" alt="" className="nav-logo-icon" />
               <div className="nav-logo-text">
-                <span className="nav-logo-name">Hemmingway</span>
+                <span className="nav-logo-name">Avarionyx</span>
                 <span className="nav-logo-sub">Technologies</span>
               </div>
             </Link>
