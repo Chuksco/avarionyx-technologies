@@ -76,7 +76,7 @@ export default function Home() {
           </h1>
           <p className="hero-sub">
             <EncryptedText
-              text="We deliver intelligent, scalable and reliable technology solutiomns that empower ypur business to grow and and operate more efficiently."
+              text="We deliver intelligent, scalable and reliable technology solutiomns that empower small businesses to grow and and operate more efficiently."
               speed={20}
             />
           </p>
