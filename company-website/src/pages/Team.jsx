@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet-async';
 
 const TEAM_MEMBERS = [
   {
-    name: 'Chukwukamso Onu',
+    name: 'Christian Singh',
     role: 'Chief Executive Officer',
     bio: 'Visionary leader with 15+ years in enterprise software. Obsessed with building teams that ship.',
     Icon: Briefcase,
