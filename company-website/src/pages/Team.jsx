@@ -5,7 +5,7 @@ import { Helmet } from 'react-helmet-async';
 
 const TEAM_MEMBERS = [
   {
-    name: 'Devyansh Dingolia',
+    name: 'Chukwukamso Onu',
     role: 'Chief Executive Officer',
     bio: 'Visionary leader with 15+ years in enterprise software. Obsessed with building teams that ship.',
     Icon: Briefcase,
@@ -13,8 +13,8 @@ const TEAM_MEMBERS = [
   },
   {
     name: 'Janardhan Verma',
-    role: 'Chief Technology Officer & Co-CEO',
-    bio: 'Former Google engineer. Architect of our entire infrastructure and AI initiatives.',
+    role: 'Technology Officer',
+    bio: 'Google engineer. Architect of our entire infrastructure and AI initiatives.',
     Icon: Code,
     expertise: ['AI/ML', 'Cloud', 'DevOps']
   },
@@ -56,11 +56,11 @@ export default function Team() {
   return (
     <>
       <Helmet>
-        <title>Our Team | Hemmingway Technologies</title>
+        <title>Our Team | Avarionyx Technologies</title>
 
         <meta
           name="description"
-          content="Meet the team behind Hemmingway Technologies. Our engineers, designers, and innovators are dedicated to building impactful software, AI solutions, and digital products."
+          content="Meet the team behind Avarionyx Technologies. Our engineers, designers, and innovators are dedicated to building impactful software, AI solutions, and digital products."
         />
       </Helmet>
 

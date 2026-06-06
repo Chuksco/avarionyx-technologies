@@ -18,11 +18,11 @@ export default function Contact() {
   return (
     <>
       <Helmet>
-        <title>Contact Us | Hemmingway Technologies</title>
+        <title>Contact Us |Avarionyx Technologies</title>
 
         <meta
           name="description"
-          content="Get in touch with Hemmingway Technologies for software development, AI, cloud, and cybersecurity solutions."
+          content="Get in touch with Avarionyx Technologies for software development, IT Services, and more."
         />
       </Helmet>
 
@@ -47,10 +47,10 @@ export default function Contact() {
 
               <div style={{ marginTop: '48px' }}>
                 {[
-                  { icon: '📍', label: 'Headquarters', value: 'RZ F1/380 , Mahavir Enclave, New Delhi' },
-                  { icon: '✉️', label: 'Email', value: 'hemmingway.tech@gmail.com' },
-                  { icon: '📞', label: 'Phone', value: '+91 7011012021' },
-                  { icon: '🕐', label: 'Hours', value: 'Mon–Fri, 9am–6pm GMT' },
+                  { icon: '📍', label: 'Headquarters', value: 'Norman Wells, Northwest Territories, Canada' },
+                  { icon: '✉️', label: 'Email', value: 'avarionyxtechnologies@gmail.com' },
+                  { icon: '📞', label: 'Phone', value: '+1 (587) 973-9362' },
+                  { icon: '🕐', label: 'Hours', value: 'Mon–Fri, 9am–5pm MST' },
                 ].map((item, i) => (
                   <div key={i} className="contact-item fade-up" style={{ transitionDelay: `${0.15 + i * 0.1}s` }}>
                     <div className="contact-item-icon">{item.icon}</div>
@@ -135,12 +135,12 @@ export default function Contact() {
                     <select id="service" name="service" value={form.service} onChange={handleChange}
                       style={{ background: 'rgba(255,255,255,0.04)', color: form.service ? 'var(--text-bright)' : 'var(--text-muted)' }}>
                       <option value="">Select a service...</option>
-                      <option value="custom">Custom Software Development</option>
-                      <option value="ai">AI & Machine Learning</option>
-                      <option value="cloud">Cloud Architecture</option>
-                      <option value="security">Cybersecurity</option>
-                      <option value="mobile">Mobile & Web Apps</option>
-                      <option value="api">API & Integrations</option>
+                      <option value="custom">Website Design & Development</option>
+                      <option value="ai">IT Support and consulting</option>
+                      <option value="cloud">Software Solutions</option>
+                      <option value="security">Digital Transformation</option>
+                      <option value="mobile">Technology Integration</option>
+                      <option value="api">Business Automation</option>
                       <option value="other">Other / Not Sure Yet</option>
                     </select>
                   </div>
