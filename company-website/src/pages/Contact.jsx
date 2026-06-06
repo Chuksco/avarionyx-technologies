@@ -6,13 +6,45 @@ import { Helmet } from 'react-helmet-async';
 export default function Contact() {
   useScrollReveal();
   const [submitted, setSubmitted] = useState(false);
+  const [submitting, setSubmitting] = useState(false);
+  const [error, setError] = useState('');
   const [form, setForm] = useState({ name: '', email: '', company: '', service: '', message: '' });
+  const formEndpoint = import.meta.env.VITE_CONTACT_FORM_ENDPOINT || 'https://formsubmit.co/ajax/avarionyxtechnologies@gmail.com';
 
-  const handleChange = (e) => setForm({ ...form, [e.target.name]: e.target.value });
+  const handleChange = (e) => {
+    setError('');
+    setForm({ ...form, [e.target.name]: e.target.value });
+  };
 
-  const handleSubmit = (e) => {
+  const handleSubmit = async (e) => {
     e.preventDefault();
-    setSubmitted(true);
+    setSubmitting(true);
+    setError('');
+
+    try {
+      const response = await fetch(formEndpoint, {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json',
+          Accept: 'application/json',
+        },
+        body: JSON.stringify({
+          ...form,
+          _subject: `New contact form message from ${form.name}`,
+          _template: 'table',
+        }),
+      });
+
+      if (!response.ok) {
+        throw new Error('Unable to send message');
+      }
+
+      setSubmitted(true);
+    } catch {
+      setError('Sorry, your message could not be sent. Please email us directly at avarionyxtechnologies@gmail.com.');
+    } finally {
+      setSubmitting(false);
+    }
   };
 
   return (
@@ -100,7 +132,10 @@ export default function Contact() {
                   <h3>Message Sent!</h3>
                   <p>Thanks {form.name}! We've received your message and will be in touch within one business day.</p>
                   <button
-                    onClick={() => setSubmitted(false)}
+                    onClick={() => {
+                      setSubmitted(false);
+                      setForm({ name: '', email: '', company: '', service: '', message: '' });
+                    }}
                     className="btn-primary"
                     style={{ marginTop: '24px', display: 'inline-flex' }}
                   >
@@ -154,8 +189,14 @@ export default function Contact() {
                     />
                   </div>
 
-                  <button type="submit" className="form-submit" id="contact-submit">
-                    Send Message
+                  {error && (
+                    <p role="alert" style={{ color: '#ff8a8a', fontSize: '14px', margin: '-8px 0 18px' }}>
+                      {error}
+                    </p>
+                  )}
+
+                  <button type="submit" className="form-submit" id="contact-submit" disabled={submitting}>
+                    {submitting ? 'Sending...' : 'Send Message'}
                     <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2">
                       <path d="M22 2L11 13M22 2L15 22l-4-9-9-4 20-7z" />
                     </svg>
