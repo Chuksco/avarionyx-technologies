@@ -16,8 +16,7 @@ const COLS = [
     links: [
       { label: 'LinkedIn', href: 'https://linkedin.com' },
       { label: 'Twitter', href: 'https://twitter.com' },
-      { label: 'GitHub', href: 'https://github.com' },
-      { label: 'Instagram', href: 'https://instagram.com' },
+      { label: 'Tiktok', href: 'https://www.tiktok.com/@avarionyxtechnologies?_r=1&_t=ZS-96yiroVMGVI' },
     ],
   },
   {
@@ -52,11 +51,11 @@ export default function Footer() {
         {/* LEFT: brand + copyright */}
         <div className="ftr-brand">
           <div className="ftr-brand-id">
-            <img src="/logo-icon.png" alt="Hemmingway" className="ftr-brand-icon" />
-            <span className="ftr-brand-name">Hemmingway Technologies</span>
+            <img src="/logo-icon.png" alt="Avarionyx" className="ftr-brand-icon" />
+            <span className="ftr-brand-name">Avarionyx Technologies</span>
           </div>
           <p className="ftr-copyright">
-            © copyright Hemmingway Technologies {year}.<br />All rights reserved.
+            © copyright Avarionyx Technologies {year}.<br />All rights reserved.
           </p>
         </div>
 
@@ -80,9 +79,6 @@ export default function Footer() {
           ))}
         </div>
       </div>
-
-      {/* ── GIANT WATERMARK ── */}
-      <div className="ftr-watermark" aria-hidden="true">Hemmingway</div>
       
     </footer>
   );

@@ -7,17 +7,17 @@ import EncryptedText from '../components/ui/EncryptedText';
 import CometCard from '../components/ui/CometCard';
 
 const SERVICES = [
-  { Icon: Zap, title: 'Custom Software', desc: 'Bespoke applications engineered for your unique business challenges, built to scale from day one.' },
-  { Icon: Brain, title: 'AI & Machine Learning', desc: 'Intelligent systems that learn, adapt, and make data-driven decisions — transforming your operations.' },
-  { Icon: Cloud, title: 'Cloud Architecture', desc: 'Scalable, resilient cloud infrastructure designed for 99.99% uptime and global performance.' },
-  { Icon: Lock, title: 'Cybersecurity', desc: 'Enterprise-grade security solutions protecting your data, users, and business continuity.' },
-  { Icon: Smartphone, title: 'Mobile & Web', desc: 'Beautiful, performant applications across every platform — web, iOS, and Android.' },
-  { Icon: LinkIcon, title: 'API & Integrations', desc: 'Seamless connectivity between your tools, platforms, and third-party services.' },
+  { Icon: Zap, title: 'Website Design and Development', desc: 'We create responsive, modern websites focused on performance, user experience, and scalable design for growing businesses online.' },
+  { Icon: Brain, title: 'IT Support & Consulting', desc: 'Providing reliable IT support and expert consulting to optimize systems, reduce downtime, and improve overall business efficiency.' },
+  { Icon: Cloud, title: 'Software Solutions', desc: 'Custom software solutions designed to solve complex business problems, improve workflows, and enhance operational productivity across industries.' },
+  { Icon: Lock, title: 'Digital Transformations', desc: 'Helping businesses modernize operations through digital tools, automation, and technology-driven strategies that improve efficiency and growth.' },
+  { Icon: Smartphone, title: 'Technology Integration', desc: 'Seamlessly connecting systems, platforms, and APIs to streamline workflows, improve communication, and unify business operations effectively.' },
+  { Icon: LinkIcon, title: 'Business Automation', desc: 'Automating repetitive business processes to save time, reduce errors, and increase productivity using smart digital solutions.' },
 ];
 
 const TESTIMONIALS = [
   {
-    text: "Hemmingway Technologies transformed our legacy system into a modern, AI-powered platform. Delivery was ahead of schedule and the quality was exceptional.",
+    text: "Avarionyx Technologies transformed our legacy system into a modern, AI-powered platform. Delivery was ahead of schedule and the quality was exceptional.",
     name: 'Sarah Chen', role: 'CTO, Nexus Corp', initial: 'S',
   },
   {
@@ -52,11 +52,11 @@ export default function Home() {
   return (
     <>
       <Helmet>
-        <title>Hemmingway Technologies | AI-Powered Software Safety Solutions</title>
+        <title>Avarionyx Technologies | AI-Powered Software Safety Solutions</title>
 
         <meta
           name="description"
-          content="Hemmingway Technologies develops AI-powered software, cloud infrastructure, cybersecurity, and industrial safety solutions."
+          content="Avarionyx Technologies develops AI-powered software, cloud infrastructure, cybersecurity, and industrial safety solutions."
         />
       </Helmet>
 
@@ -71,18 +71,18 @@ export default function Home() {
             Now Available — Enterprise Plans
           </div>
           <h1>
-            Software That<br />
-            <span className="gradient-text">Moves the World</span>
+            Innovating the Future,<br />
+            <span className="gradient-text">One Solution at a Time</span>
           </h1>
           <p className="hero-sub">
             <EncryptedText
-              text="We build transformative digital products — from AI platforms to cloud-native infrastructure — for companies that refuse to stand still."
+              text="We deliver intelligent, scalable and reliable technology solutiomns that empower ypur business to grow and and operate more efficiently."
               speed={20}
             />
           </p>
           <div className="hero-cta">
             <Link to="/contact" className="btn-primary">
-              Start a Project
+              Get Started
               <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M5 12h14M12 5l7 7-7 7" /></svg>
             </Link>
             <Link to="/about" className="btn-ghost">Our Story</Link>
@@ -137,7 +137,7 @@ export default function Home() {
       <section className="bento" ref={bentoRef}>
         <div className="container">
           <div className="section-header fade-up">
-            <div className="tag">Why Hemmingway</div>
+            <div className="tag">Why Avarionyx</div>
             <h2>Built for scale,<br />crafted for humans</h2>
           </div>
           <div className="bento-grid">
