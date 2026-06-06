@@ -12,35 +12,35 @@ const TEAM_MEMBERS = [
     expertise: ['Strategy', 'Leadership', 'Architecture']
   },
   {
-    name: 'Janardhan Verma',
+    name: 'Jonathan Lee',
     role: 'Technology Officer',
     bio: 'Google engineer. Architect of our entire infrastructure and AI initiatives.',
     Icon: Code,
     expertise: ['AI/ML', 'Cloud', 'DevOps']
   },
   {
-    name: 'Manish Mandia',
+    name: 'Nadia Patel',
     role: 'Chief Product Officer',
     bio: 'Full-stack wizard. Mentor to 12+ junior engineers and obsessive about code quality.',
     Icon: Cog,
     expertise: ['Full Stack', 'UI/UX', 'Performance']
   },
   {
-    name: 'Yash Kumar',
+    name: 'Yash Kaur',
     role: 'Chief Finance Officer',
     bio: 'Award-winning designer who believes code and design are inseparable.',
     Icon: Palette,
     expertise: ['UI/UX', 'Design Systems', 'Branding']
   },
   {
-    name: 'Sakshi Yadav',
+    name: 'Sakshi Sharma',
     role: 'Chief Marketing Officer',
     bio: 'React expert. Builds pixel-perfect interfaces that perform flawlessly at scale.',
     Icon: Monitor,
     expertise: ['React', 'Performance', 'Animation']
   },
   {
-    name: 'Bhardwaj Kartikay',
+    name: 'Bhardwaj Reddy',
     role: 'Chief Operations Officer',
     bio: 'Keeps us safe. Former cybersecurity researcher with passion for zero-trust architecture.',
     Icon: Lock,
